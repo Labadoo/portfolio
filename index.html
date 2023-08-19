@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
+    <script src="https://kit.fontawesome.com/6843eb44d6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js" integrity="sha512-fMPPLjF/Xr7Ga0679WgtqoSyfUoQgdt8IIxJymStR5zV3Fyb6B3u/8DcaZ6R6sXexk5Z64bCgo2TYyn760EdcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <hr>
+    <h1>PORTFOLIO</h1>
+    <hr>
+    <div class="container">
+        <img class="logo" src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/341890505_6039390499443102_8285633661514859232_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeE77rp-x0KjnA6GoSZnMzI8TLJnEJPVl49MsmcQk9WXj2aUP-qNB3jiRyA5jdF_Kwcfl4xNBUx-e5DvmdSJ5KAd&_nc_ohc=e0Fl-W3zJPoAX8vuSXk&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfBqXlQGBQ9YA_laOlCmY02q9RNCKag7ywY0surt1mjT6A&oe=64E485BF" alt="">
+        <h2 class="name">Supparerk Jeerat</h2>
+        <span class="slogan">"ใช้ชีวิตให้คุ้มกับที่เกิดมาครั้งเดียว"</span>
+        <div class="social-img">
+            <ul>
+                <li><a href="#" target="_blank"></a><i class="fa fa-brands fa-instagram"></i></li>
+                <li><a href="#" target="_blank"></a><i class="fa-brands fa-line"></i></li>
+                <li><a href="#" target="_blank"></a><i class="fa-brands fa-facebook"></i></li>
+            </ul>
+            <p class="bio">
+              Name:Supparerk Jeerat <br>
+              Nickname:Benz <br>
+              Birt้day:May 30, 2003 <br>
+              nationality:Thai <br>
+              religion:Buddhist <br>
+              height:176 <br>
+              weight:73
+            </p>
+        </div>
+    </div>
+<hr>
+
+<div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar', // เปลี่ยนประเภทกราฟเป็น 'bar'
+            data: {
+                labels: ['Games', 'Movie', 'Write code'],
+                datasets: [{
+                    label: 'Hours',
+                    data: [3, 5, 3],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <hr>
+
+    <div class="footer">
+        Supparerk Jeerat &copy;
+        <script>
+            document.write(new Date().getFullYear())
+        </script>. Portfolio by Supparerk
+    </div>
+
+</body>
+</html>
